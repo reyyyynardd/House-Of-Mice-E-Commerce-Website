@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Mice | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="img/logo.png" alt="HouseofMice"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <a href="#" id="close">x</a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="#" id="menu">Menu</a>
+        </div>
+    </section>
+
+    <section id="contact" class="padding">
+        <form class="contactContainer" onsubmit="event.preventDefault(); validateContactForm()">
+            <h4 class="contactTitle">Reach Out</h4>
+            <h1>`Contact Us`</h1>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Name">
+            <small class="error"></small>
+
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" placeholder="E-mail Address">
+            <small class="error"></small>
+
+            <label for="message">Message: </label>
+            <textarea id="message" placeholder="Enter a Message" rows="5"></textarea>
+            <small class="error"></small>
+
+            <div class="submitMsg">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+        </form>
+    </section>
+
+    <div id="footer">
+        <footer class="padding">
+            <div class="column">
+                <img src="img/logo.png" alt="" class="logo2">
+                <h4>Contact</h4>
+                <p><i><b>Telephone No: </b></i>+60-1137-4792</p>
+                <p><i></o><b>E-mail: </b></i>20086328@imail.sunway.edu.my</p>
+            </div>
+            <div class="column install">
+                <h4>Install Application</h4>
+                <p>For iOS or Android</p>
+                <div class="row">
+                    <img src="img/app/app.jpg" alt="">
+                    <img src="img/app/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>© 2022, HouseOfMice - Reynard Amadeus Rumanouw 20086328</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
